@@ -1,19 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Coda&display=swap');
-*{
-  box-sizing: border-box;
-}
+
 .app-container {
-  width: 80%;
-  margin: auto;
-  height: 100vh;
+
 }
 
 .app-sidebar {
-  width: 29%;
-  height: 100%;
-  float: left;
-  display: flex;
-  flex-direction: column;
+  min-height: 95vh;
 }
 
 .app-sidebar h1 {
@@ -23,7 +15,8 @@
   font-size: 2.5em;
   color: var(--dark-font-color);
 }
-.app-sidebar h1 span{
+
+.app-sidebar h1 span {
   color: royalblue;
 }
 
@@ -35,6 +28,7 @@
   background-color: royalblue;
   color: #eee;
   font-size: 1.8em;
+
 }
 
 .logo span {
@@ -42,9 +36,9 @@
   padding: 0 1rem;
 }
 
-.app-sidebar-footer {
-  position: relative;
-  bottom: 0;
+
+.nav-buttons-container {
+
 }
 
 .nav-buttons {
@@ -60,9 +54,12 @@
   background-color: rgba(100, 149, 237, 0.4);
 }
 
+.app-sidebar-footer {
+  min-height: 5vh;
+
+}
 
 .app-main {
-  width: 69%;
-  height: 100%;
-  float: right;
+
+
 }

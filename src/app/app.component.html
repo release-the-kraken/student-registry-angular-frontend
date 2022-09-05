@@ -1,6 +1,6 @@
-<div class="app-container">
-
-  <aside class="app-sidebar">
+<div class="app-container container-fluid">
+<div class="row col-10 offset-1">
+  <aside class="col-3 h-100 app-sidebar">
     <div class="logo"><span>&lt;releasethekraken/&gt;</span></div>
     <div class="nav-menu-title"><h1><span>E</span> Registry</h1></div>
     <nav class="nav-buttons-container">
@@ -8,11 +8,14 @@
       <div><button class="nav-buttons" mat-button [routerLink]="['students']">Student List</button> </div>
       <div><button class="nav-buttons" mat-button [routerLink]="['add-student']">Student Registration Form</button> </div>
     </nav>
-    <footer class="app-sidebar-footer">
-      <p>Author: release-the-kraken</p>
-    </footer>
+
   </aside>
-  <main class="app-main">
+  <main class="col-9 app-main">
     <router-outlet></router-outlet>
   </main>
+  <footer class="app-sidebar-footer">
+    <p>Author: release-the-kraken</p>
+  </footer>
+
+</div>
 </div>
