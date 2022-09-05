@@ -1,0 +1,33 @@
+<mat-card>
+  <mat-card-title class="form-title">REGISTRATION FORM</mat-card-title>
+  <mat-card-content class="mat-card-content container-fluid col-12">
+    <div class="row">
+      <div class="col-6 row  label-container">
+        <mat-label>First name:</mat-label>
+        <mat-label>Last name:</mat-label>
+        <mat-label>Index Number:</mat-label>
+        <mat-label>Date of Birth:</mat-label>
+      </div>
+      <div class="col-6 input-container">
+        <mat-form-field class="col-12" appearance="outline">
+          <input type="text" matInput placeholder="First name" [(ngModel)]="student.name">
+        </mat-form-field>
+        <mat-form-field class="col-12" appearance="outline">
+          <input type="text" matInput placeholder="Last name" [(ngModel)]="student.surname">
+        </mat-form-field>
+        <mat-form-field class="col-12" appearance="outline">
+          <input type="number" matInput placeholder="Index Number" [(ngModel)]="student.indexNumber">
+        </mat-form-field>
+        <mat-form-field class="col-12" appearance="outline">
+          <input matInput [matDatepicker]="picker" [(ngModel)]="student.birthDate">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+      </div>
+    </div>
+    <div class="form-button-row">
+      <button type="submit" class="submit-button" mat-flat-button color="primary" (click)="addStudent()">Submit</button>
+    </div>
+  </mat-card-content>
+</mat-card>

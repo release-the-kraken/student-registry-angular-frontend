@@ -1,0 +1,23 @@
+.form-title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: var(--dark-font-color);
+  padding: 2rem 0;
+}
+mat-form-field{
+
+}
+mat-label{
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-top: 0.5rem;
+}
+.form-button-row{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.form-button-row{
+  display: flex;
+  flex-direction: row-reverse;
+}

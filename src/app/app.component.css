@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Coda&display=swap');
+*{
+  box-sizing: border-box;
+}
+.app-container {
+  width: 80%;
+  margin: auto;
+  height: 100vh;
+}
+
+.app-sidebar {
+  width: 29%;
+  height: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-sidebar h1 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 2.5em;
+  color: var(--dark-font-color);
+}
+.app-sidebar h1 span{
+  color: royalblue;
+}
+
+.logo {
+  font-family: 'Coda', 'Courier New', Verdana, Arial, sans-serif;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: row;
+  background-color: royalblue;
+  color: #eee;
+  font-size: 1.8em;
+}
+
+.logo span {
+  line-height: 3rem;
+  padding: 0 1rem;
+}
+
+.app-sidebar-footer {
+  position: relative;
+  bottom: 0;
+}
+
+.nav-buttons {
+  width: 100%;
+  padding: 20px 25px;
+  border-radius: 0;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+
+.nav-buttons:hover {
+  background-color: rgba(100, 149, 237, 0.4);
+}
+
+
+.app-main {
+  width: 69%;
+  height: 100%;
+  float: right;
+}

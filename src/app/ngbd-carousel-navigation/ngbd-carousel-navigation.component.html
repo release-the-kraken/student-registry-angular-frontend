@@ -1,0 +1,11 @@
+<ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+  <ng-template ngbSlide *ngFor="let image of images">
+    <div class="picsum-img-wrapper">
+      <img [src]="image" alt="Random slide">
+      <div class="carousel-caption" style="text-shadow:  1px 2px 4px black">
+        <h1>Welcome to Sacred Heart Primary School Student Registry</h1>
+      </div>
+    </div>
+  </ng-template>
+</ngb-carousel>
+
